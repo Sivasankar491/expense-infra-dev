@@ -65,10 +65,9 @@ module "records" {
 
   zone_name = var.zone_name
 
-  records = [
-    
+  records = [ 
     {
-      name    = "mysql-${var.environment}" #mysql-dev.daws81s.online
+      name    = "mysql-${var.environment}" #mysql-dev.kotte.siva
       type    = "CNAME"
       ttl     = 1
       records = [
@@ -77,5 +76,4 @@ module "records" {
       allow_overwrite = true
     },
   ]
-
 }
