@@ -26,6 +26,14 @@ variable "ansible_sg_name" {
     default = "Ansible"
 }
 
+variable "app_alb_sg_name" {
+    default = "App-alb"
+}
+
+variable "vpn_sg_name" {
+    default = "VPN"
+}
+
 
 variable "common_tags" {
     default = {
@@ -61,5 +69,17 @@ variable "bastion_sg_tags" {
 variable "ansible_sg_tags" {
     default = {
         Component = "Ansible"
+    }
+}
+
+variable "app_alb_sg_tags" {
+    default = {
+        Component = "App-alb"
+    }
+}
+
+variable "vpn_sg_tags" {
+    default = {
+        Component = "VPN"
     }
 }
